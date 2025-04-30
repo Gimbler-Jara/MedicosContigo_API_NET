@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\controllers\\usuarioapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\controllers\\usuarioapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\reposotorio\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\reposotorio\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\reposotorio\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\reposotorio\\interfaces\\iusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\controllers\\diasemanaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\controllers\\diasemanaapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\reposotorio\\dao\\documenttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\reposotorio\\dao\\documenttypedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\reposotorio\\dao\\diasemanadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\reposotorio\\dao\\diasemanadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\reposotorio\\interfaces\\idiasemana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\reposotorio\\interfaces\\idiasemana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|c:\\users\\jarag\\desktop\\cibertec_laboratorio\\ciclo5\\desarrollo de servicios web i\\proyecto\\api\\net_medicoscontigo_api\\net_medicoscontigo_api\\models\\diasemana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{026EE138-677E-4BC1-BECD-7A35A4860507}|NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj|solutionrelative:net_medicoscontigo_api\\models\\diasemana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 840,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Controllers\\UsuarioAPIController.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Controllers\\UsuarioAPIController.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Controllers\\UsuarioAPIController.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Controllers\\UsuarioAPIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:37:47.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "usuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\DAO\\usuarioDAO.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Reposotorio\\DAO\\usuarioDAO.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\DAO\\usuarioDAO.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Reposotorio\\DAO\\usuarioDAO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:32:49.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IUsuario.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IUsuario.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IUsuario.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:32:23.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:31:34.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DiaSemanaAPIController.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Controllers\\DiaSemanaAPIController.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Controllers\\DiaSemanaAPIController.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Controllers\\DiaSemanaAPIController.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Controllers\\DiaSemanaAPIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:21:02.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "diaSemanaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\DAO\\diaSemanaDTO.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Reposotorio\\DAO\\diaSemanaDTO.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\DAO\\diaSemanaDTO.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Reposotorio\\DAO\\diaSemanaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:17:50.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDiaSemana.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IDiaSemana.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IDiaSemana.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IDiaSemana.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Reposotorio\\Interfaces\\IDiaSemana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:16:31.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DiaSemana.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Models\\DiaSemana.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Models\\DiaSemana.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Models\\DiaSemana.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Models\\DiaSemana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:16:15.935Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 338,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "documentTypeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\DAO\\documentTypeDTO.cs",
+              "RelativeDocumentMoniker": "NET_MedicosContigo_API\\Reposotorio\\DAO\\documentTypeDTO.cs",
+              "ToolTip": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\Reposotorio\\DAO\\documentTypeDTO.cs",
+              "RelativeToolTip": "NET_MedicosContigo_API\\Reposotorio\\DAO\\documentTypeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T08:18:51.193Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NET_MedicosContigo_API.props" />
+</Project>

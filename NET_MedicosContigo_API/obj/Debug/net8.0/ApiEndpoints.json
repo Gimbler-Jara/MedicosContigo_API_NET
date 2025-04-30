@@ -1,0 +1,378 @@
+[
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.DiaSemanaAPIController",
+    "Method": "ListarDiasSemana",
+    "RelativePath": "api/diasSemana",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.DocumentTypeAPIController",
+    "Method": "ListarTiposDocumento",
+    "RelativePath": "api/document-types",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.EspecialidadAPIController",
+    "Method": "ListarEspecialidades",
+    "RelativePath": "api/especialidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ListarMedicos",
+    "RelativePath": "api/medicos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "RegistrarMedico",
+    "RelativePath": "api/medicos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.RegistroMedicoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NET_MedicosContigo_API.DTO.MedicoResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ActualizarMedico",
+    "RelativePath": "api/medicos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.MedicoActualizacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "EliminarMedico",
+    "RelativePath": "api/medicos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ListarDiasDisponiblesPorMedico",
+    "RelativePath": "api/medicos/dias-disponibles/{idMedico}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMedico",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ObtenerEspecialidadPorIdMedico",
+    "RelativePath": "api/medicos/especialidad_por_id_medico/{idMedico}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMedico",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ListarHorariosDeTrabajoMedico",
+    "RelativePath": "api/medicos/horario-trabajo-medico/{idMedico}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMedico",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ListarHorasDisponibles",
+    "RelativePath": "api/medicos/horas_disponibles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMedico",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fecha",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
+    "Method": "ListarMedicosPorEspecialidad",
+    "RelativePath": "api/medicos/medicos_por_especialidad/{idEspecialidad}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idEspecialidad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.PacienteAPIController",
+    "Method": "ListarPacientes",
+    "RelativePath": "api/pacientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.PacienteAPIController",
+    "Method": "RegistrarPaciente",
+    "RelativePath": "api/pacientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.RegistroPacienteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "NET_MedicosContigo_API.DTO.PacienteResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.PacienteAPIController",
+    "Method": "EliminarPaciente",
+    "RelativePath": "api/pacientes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.PacienteAPIController",
+    "Method": "ActualizarPaciente",
+    "RelativePath": "api/pacientes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.PacienteActualizacionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "ListarUsuarios",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "CrearUsuario",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "ObtenerUsuario",
+    "RelativePath": "api/usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "ActualizarUsuario",
+    "RelativePath": "api/usuarios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.Models.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "EliminarUsuario",
+    "RelativePath": "api/usuarios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "Login",
+    "RelativePath": "api/usuarios/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[NET_MedicosContigo_API.WeatherForecast, NET_MedicosContigo_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
