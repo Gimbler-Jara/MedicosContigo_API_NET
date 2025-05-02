@@ -1,4 +1,5 @@
 ﻿using NET_MedicosContigo_API.DTO;
+using NET_MedicosContigo_API.Emun;
 using NET_MedicosContigo_API.Models;
 
 namespace NET_MedicosContigo_API.Reposotorio.Interfaces
@@ -11,7 +12,9 @@ namespace NET_MedicosContigo_API.Reposotorio.Interfaces
         Usuario ActualizarUsuario(int id, Usuario usuario);
         void EliminarUsuario(int id);
 
-        (Usuario? usuario, bool emailExiste) BuscarPorEmail(LoginDTO dto);
+        (Usuario? usuario, LoginResultado resultado) BuscarPorEmail(LoginDTO dto);
+
+        bool CambiarEstadoUsuario(int idUsuario);
 
     }
 }

@@ -41,18 +41,6 @@ namespace NET_MedicosContigo_API.Controllers
             }
         }
 
-        // Fix for CS0815: No se puede asignar void a una variable con tipo implícito  
-        [HttpDelete("{id}")]
-        public IActionResult EliminarPaciente(int id)
-        {
-            var eliminado = _pacienteDTO.eliminarPaciente(id);
-
-            if (!eliminado)
-                return NotFound(new { success = false, message = "Paciente no encontrado" });
-
-            return Ok(new { success = true, message = "Paciente eliminado correctamente" });
-        }
-
         // PUT: /api/pacientes/{id}
         [HttpPut("{id}")]
         public IActionResult ActualizarPaciente(int id, [FromBody] PacienteActualizacionDTO dto)

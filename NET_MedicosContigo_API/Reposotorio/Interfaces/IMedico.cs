@@ -10,8 +10,6 @@ namespace NET_MedicosContigo_API.Reposotorio.Interfaces
 
         bool ActualizarMedico(int id, MedicoActualizacionDTO dto);
 
-        bool EliminarMedico(int id);
-
         Especialidad? ObtenerEspecialidadPorIdMedico(int idMedico);
 
         IEnumerable<MedicosPorEspecialidadDTO> ListarMedicosPorEspecialidad(int idEspecialidad);

@@ -165,3 +165,10 @@ C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I
 C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\obj\Debug\net8.0\NET_MedicosContigo_API.pdb
 C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\obj\Debug\net8.0\NET_MedicosContigo_API.genruntimeconfig.cache
 C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\obj\Debug\net8.0\ref\NET_MedicosContigo_API.dll
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\obj\Debug\net8.0\NET_MedicosContigo_API.sourcelink.json
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\obj\Debug\net8.0\NET_MedicosContigo_API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\jarag\Desktop\Cibertec_laboratorio\Ciclo5\DESARROLLO DE SERVICIOS WEB I\Proyecto\API\NET_MedicosContigo_API\NET_MedicosContigo_API\bin\Debug\net8.0\BCrypt.Net-Next.dll

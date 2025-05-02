@@ -19,6 +19,11 @@ namespace NET_MedicosContigo_API.Data
         public DbSet<Hora> Horas { get; set; }
         public DbSet<DiaSemana> DiasSemana { get; set; }
         public DbSet<EstadoCita> EstadosCita { get; set; }
+        public DbSet<ResultadoGenerico> ResultadosGenericos { get; set; }
+        public DbSet<ResultadoCitaDTO> ResultadoCitaDTO { get; set; }
+        public DbSet<CitasReservadasPorPacienteResponseDTO> CitasReservadasPorPaciente { get; set; } = null!;
+
+
 
 
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options) : base(options) { }
@@ -42,6 +47,11 @@ namespace NET_MedicosContigo_API.Data
             modelBuilder.Entity<DiasDisponiblesPorMedicoDTO>().HasNoKey();
             modelBuilder.Entity<HorasDisponiblesDeCitasDTO>().HasNoKey();
             modelBuilder.Entity<DisponibilidadCitaPorMedicoDTO>().HasNoKey();
+            modelBuilder.Entity<CitasAgendadasResponseDTO>().HasNoKey();
+            modelBuilder.Entity<RegistrarDisponibilidadDeCitaDTO>().HasNoKey();
+            modelBuilder.Entity<ResultadoCitaDTO>().HasNoKey();
+            modelBuilder.Entity<CitasReservadasPorPacienteResponseDTO>().HasNoKey().ToView(null);
+
 
 
             // Relaciones 1:1 necesarias
@@ -62,6 +72,11 @@ namespace NET_MedicosContigo_API.Data
                 .WithOne(u => u.Medico)
                 .HasForeignKey<Medico>(m => m.IdUsuario)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Usuario>()
+               .Property(u => u.Activo)
+               .HasColumnName("activo")
+               .HasConversion<bool>();
         }
 
     }

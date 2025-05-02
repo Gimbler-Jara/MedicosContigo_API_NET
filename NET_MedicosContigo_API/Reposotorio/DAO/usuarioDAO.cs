@@ -2,8 +2,10 @@
 using Microsoft.EntityFrameworkCore;
 using NET_MedicosContigo_API.Data;
 using NET_MedicosContigo_API.DTO;
+using NET_MedicosContigo_API.Emun;
 using NET_MedicosContigo_API.Models;
 using NET_MedicosContigo_API.Reposotorio.Interfaces;
+using System.Text.Json;
 
 namespace NET_MedicosContigo_API.Reposotorio.DAO
 {
@@ -25,16 +27,42 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
             return existente;
         }
 
-        public (Usuario? usuario, bool emailExiste) BuscarPorEmail(LoginDTO dto)
+        public (Usuario? usuario, LoginResultado resultado) BuscarPorEmail(LoginDTO dto)
         {
-            var emailExiste = _context.Usuarios.Any(u => u.Email == dto.Email);
-
             var usuario = _context.Usuarios
                 .Include(u => u.DocumentType)
                 .Include(u => u.Rol)
-                .FirstOrDefault(u => u.Email == dto.Email && u.PasswordHash == dto.Password);
+                .FirstOrDefault(u => u.Email == dto.Email);
 
-            return (usuario, emailExiste);
+            if (usuario == null)
+            {
+                return (null, LoginResultado.UsuarioNoExiste);
+            }
+
+            if (!usuario.Activo)
+            {
+                return (null, LoginResultado.UsuarioInactivo);
+            }
+
+            if (!BCrypt.Net.BCrypt.Verify(dto.Password, usuario.PasswordHash))
+            {
+                return (null, LoginResultado.ContraseñaIncorrecta);
+            }
+
+            return (usuario, LoginResultado.Exitoso);
+        }
+
+        public bool CambiarEstadoUsuario(int idUsuario)
+        {
+            var usuario = _context.Usuarios.FirstOrDefault(u => u.Id == idUsuario);
+
+            if (usuario == null)
+                return false;
+
+            usuario.Activo = !usuario.Activo;
+            _context.SaveChanges();
+
+            return true;
         }
 
         public Usuario CrearUsuario(Usuario usuario)

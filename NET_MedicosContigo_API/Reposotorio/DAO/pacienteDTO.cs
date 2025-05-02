@@ -24,35 +24,14 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
             if (paciente == null) return false;
 
             var usuario = paciente.Usuario!;
-            usuario.DocumentTypeId = dto.DocumentTypeId;
-            usuario.Dni = dto.Dni;
             usuario.LastName = dto.LastName;
             usuario.MiddleName = dto.MiddleName;
             usuario.FirstName = dto.FirstName;
-            usuario.BirthDate = dto.BirthDate;
-            usuario.Gender = dto.Gender[0];
             usuario.Telefono = dto.Telefono;
-            usuario.Email = dto.Email;
-            usuario.PasswordHash = dto.Password;
 
             _context.SaveChanges();
             return true;
         }
-
-        public bool eliminarPaciente(int id)
-        {
-            var paciente = _context.Pacientes
-                .Include(p => p.Usuario)
-                .FirstOrDefault(p => p.IdUsuario == id);
-
-            if (paciente == null) return false;
-
-            _context.Usuarios.Remove(paciente.Usuario!);
-            _context.SaveChanges();
-
-            return true;
-        }
-
 
         public IEnumerable<PacienteResponseDTO> listarPacientes()
         {
@@ -76,6 +55,7 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                             Telefono = p.Usuario.Telefono,
                             Email = p.Usuario.Email,
                             PasswordHash = p.Usuario.PasswordHash,
+                            Activo = p.Usuario.Activo,
                             DocumentType = new DocumentTypeDTO
                             {
                                 Id = p.Usuario.DocumentType!.Id,
@@ -115,8 +95,9 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                 Gender = dto.Gender[0],
                 Telefono = dto.Telefono,
                 Email = dto.Email,
-                PasswordHash = dto.Password,
-                RolId = rolPaciente.Id
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                RolId = rolPaciente.Id,
+                Activo = true
             };
 
             _context.Usuarios.Add(usuario);
@@ -145,6 +126,7 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                     Telefono = usuario.Telefono,
                     Email = usuario.Email,
                     PasswordHash = usuario.PasswordHash,
+                    Activo = usuario.Activo,
                     DocumentType = new DocumentTypeDTO
                     {
                         Id = documentType.Id,

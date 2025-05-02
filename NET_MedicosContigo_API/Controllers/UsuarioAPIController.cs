@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NET_MedicosContigo_API.Data;
 using NET_MedicosContigo_API.DTO;
+using NET_MedicosContigo_API.Emun;
 using NET_MedicosContigo_API.Models;
 using NET_MedicosContigo_API.Reposotorio.DAO;
 
@@ -90,18 +91,30 @@ namespace NET_MedicosContigo_API.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginDTO dto)
         {
-            var (usuario, emailExiste) = _usuarioDao.BuscarPorEmail(dto);
+            var (usuario, resultado) = _usuarioDao.BuscarPorEmail(dto);
 
-            if (usuario == null)
+            return resultado switch
             {
-                if (!emailExiste)
-                    return NotFound(new { message = "Usuario no encontrado" });
-
-                return Unauthorized(new { message = "Contraseña incorrecta" });
-            }
-
-            return Ok(usuario);
+                LoginResultado.UsuarioNoExiste => NotFound(new { message = "Usuario no encontrado" }),
+                LoginResultado.UsuarioInactivo => Unauthorized(new { message = "Usuario inactivo" }),
+                LoginResultado.ContraseñaIncorrecta => Unauthorized(new { message = "Contraseña incorrecta" }),
+                LoginResultado.Exitoso => Ok(usuario),
+                _ => StatusCode(500, new { message = "Error inesperado" })
+            };
         }
+
+
+        [HttpPut("cambiar-estado-usuario/{id}")]
+        public IActionResult CambiarEstadoUsuario(int id)
+        {
+            var resultado = _usuarioDao.CambiarEstadoUsuario(id);
+
+            if (!resultado)
+                return NotFound(new { message = "Usuario no encontrado" });
+
+            return Ok(new { message = "Estado del usuario actualizado correctamente" });
+        }
+
 
     }
 }

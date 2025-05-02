@@ -21,7 +21,7 @@ namespace NET_MedicosContigo_API.Controllers
         [HttpGet]
         public IActionResult ListarMedicos()
         {
-            var medicos = _medicoDTO.ListarMedicos();
+            var medicos = _medicoDTO.ListarMedicos();   
             return Ok(medicos);
         }
 
@@ -52,18 +52,6 @@ namespace NET_MedicosContigo_API.Controllers
         }
 
 
-        [HttpDelete("{id}")]
-        public IActionResult EliminarMedico(int id)
-        {
-            var eliminado = _medicoDTO.EliminarMedico(id);
-
-            if (!eliminado)
-                return NotFound(new { success = false, message = "Médico no encontrado" });
-
-            return Ok(new { success = true, message = "Médico eliminado correctamente" });
-        }
-
-
         [HttpGet("especialidad_por_id_medico/{idMedico}")]
         public IActionResult ObtenerEspecialidadPorIdMedico(int idMedico)
         {
@@ -76,7 +64,7 @@ namespace NET_MedicosContigo_API.Controllers
         }
 
 
-        [HttpGet("medicos_por_especialidad/{idEspecialidad}")]
+        [HttpGet("medicos-por-especialidad/{idEspecialidad}")]
         public IActionResult ListarMedicosPorEspecialidad(int idEspecialidad)
         {
             var medicos = _medicoDTO.ListarMedicosPorEspecialidad(idEspecialidad);
@@ -100,7 +88,7 @@ namespace NET_MedicosContigo_API.Controllers
         }
 
 
-        [HttpGet("horas_disponibles")]
+        [HttpGet("horas-disponibles")]
         public IActionResult ListarHorasDisponibles([FromQuery] int idMedico, [FromQuery] DateTime fecha)
         {
             var horas = _medicoDTO.ListarHorasDisponibles(idMedico, fecha);

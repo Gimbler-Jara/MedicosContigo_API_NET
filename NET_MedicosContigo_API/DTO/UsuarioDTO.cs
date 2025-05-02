@@ -12,6 +12,7 @@
         public string? Telefono { get; set; }
         public string? Email { get; set; }
         public string PasswordHash { get; set; } = null!;
+        public bool Activo { get; set; }
         public RolDTO Rol { get; set; } = null!;
         public DocumentTypeDTO DocumentType { get; set; } = null!;
     }

@@ -1,5 +1,117 @@
 [
   {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "AgendarCita",
+    "RelativePath": "api/cita-medica/agendar-cita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.AgendarCitaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "CambiarEstadoCitaReservadoAAtendido",
+    "RelativePath": "api/cita-medica/cambiar-estado-cita-reservado-atendido/{idCita}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCita",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "CambiarEstadoDisponibilidad",
+    "RelativePath": "api/cita-medica/cambiar-estado-disponibilidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "NET_MedicosContigo_API.DTO.CambiarEstadoDisponibilidadDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "ListarCitasAgendadas",
+    "RelativePath": "api/cita-medica/citas-agendadas/{idMedico}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMedico",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "ListarCitasReservadasPorPaciente",
+    "RelativePath": "api/cita-medica/citas-reservadas-paciente/{idPaciente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPaciente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "EliminarCita",
+    "RelativePath": "api/cita-medica/eliminar-cita/{idCita}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCita",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.CitaMedicaAPIController",
+    "Method": "RegistrarDisponibilidadDeCita",
+    "RelativePath": "api/cita-medica/registrar-disponibilidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "NET_MedicosContigo_API.DTO.RegistrarDisponibilidadDeCitaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NET_MedicosContigo_API.Controllers.DiaSemanaAPIController",
     "Method": "ListarDiasSemana",
     "RelativePath": "api/diasSemana",
@@ -88,22 +200,6 @@
   },
   {
     "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
-    "Method": "EliminarMedico",
-    "RelativePath": "api/medicos/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
     "Method": "ListarDiasDisponiblesPorMedico",
     "RelativePath": "api/medicos/dias-disponibles/{idMedico}",
     "HttpMethod": "GET",
@@ -153,7 +249,7 @@
   {
     "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
     "Method": "ListarHorasDisponibles",
-    "RelativePath": "api/medicos/horas_disponibles",
+    "RelativePath": "api/medicos/horas-disponibles",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -174,7 +270,7 @@
   {
     "ContainingType": "NET_MedicosContigo_API.Controllers.MedicoAPIController",
     "Method": "ListarMedicosPorEspecialidad",
-    "RelativePath": "api/medicos/medicos_por_especialidad/{idEspecialidad}",
+    "RelativePath": "api/medicos/medicos-por-especialidad/{idEspecialidad}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -222,22 +318,6 @@
         "StatusCode": 200
       }
     ]
-  },
-  {
-    "ContainingType": "NET_MedicosContigo_API.Controllers.PacienteAPIController",
-    "Method": "EliminarPaciente",
-    "RelativePath": "api/pacientes/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
   },
   {
     "ContainingType": "NET_MedicosContigo_API.Controllers.PacienteAPIController",
@@ -328,6 +408,22 @@
     "Method": "EliminarUsuario",
     "RelativePath": "api/usuarios/{id}",
     "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NET_MedicosContigo_API.Controllers.UsuarioAPIController",
+    "Method": "CambiarEstadoUsuario",
+    "RelativePath": "api/usuarios/cambiar-estado-usuario/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [

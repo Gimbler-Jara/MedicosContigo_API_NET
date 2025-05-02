@@ -8,7 +8,6 @@ namespace NET_MedicosContigo_API.Reposotorio.Interfaces
 
         IEnumerable<PacienteResponseDTO> listarPacientes();
         PacienteResponseDTO registrarPaciente(RegistroPacienteDTO paciente);
-        bool eliminarPaciente(int id);
         bool actualizarPaciente(int id, PacienteActualizacionDTO paciente);
     }
 }

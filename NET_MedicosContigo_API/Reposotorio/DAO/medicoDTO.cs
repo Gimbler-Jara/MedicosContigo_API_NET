@@ -31,8 +31,6 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
             usuario.MiddleName = dto.MiddleName;
             usuario.LastName = dto.LastName;
             usuario.Telefono = dto.Telefono;
-            usuario.BirthDate = dto.BirthDate;
-            usuario.Gender = dto.Gender[0];
 
             // Si se envía nueva especialidad
             if (dto.EspecialidadId.HasValue)
@@ -45,21 +43,6 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
             }
 
             _context.SaveChanges();
-            return true;
-        }
-
-        public bool EliminarMedico(int id)
-        {
-            var medico = _context.Medicos
-              .Include(m => m.Usuario)
-              .FirstOrDefault(m => m.IdUsuario == id);
-
-            if (medico == null)
-                return false;
-
-            _context.Usuarios.Remove(medico.Usuario!);
-            _context.SaveChanges();
-
             return true;
         }
 
@@ -86,6 +69,7 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                      Telefono = m.Usuario.Telefono,
                      Email = m.Usuario.Email,
                      PasswordHash = m.Usuario.PasswordHash,
+                     Activo = m.Usuario.Activo,
                      DocumentType = new DocumentTypeDTO
                      {
                          Id = m.Usuario.DocumentType!.Id,
@@ -132,8 +116,9 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                 Gender = dto.Gender[0],
                 Telefono = dto.Telefono,
                 Email = dto.Email,
-                PasswordHash = dto.Password,
-                RolId = rolMedico.Id
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                RolId = rolMedico.Id,
+                Activo = true
             };
 
             _context.Usuarios.Add(usuario);
@@ -163,6 +148,7 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                     Telefono = usuario.Telefono,
                     Email = usuario.Email,
                     PasswordHash = usuario.PasswordHash,
+                    Activo = usuario.Activo,
                     DocumentType = new DocumentTypeDTO
                     {
                         Id = documentType.Id,

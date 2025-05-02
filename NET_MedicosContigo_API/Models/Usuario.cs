@@ -41,6 +41,9 @@ namespace NET_MedicosContigo_API.Models
         [Column("rol_id")]
         public int RolId { get; set; }
 
+        [Column("activo")]
+        public bool Activo { get; set; }
+
         // Relaciones
         public DocumentType? DocumentType { get; set; }
         public Rol? Rol { get; set; }
