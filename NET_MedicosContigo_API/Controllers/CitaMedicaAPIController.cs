@@ -10,10 +10,10 @@ namespace NET_MedicosContigo_API.Controllers
     [ApiController]
     public class CitaMedicaAPIController : ControllerBase
     {
-        private readonly citaMedicaDTO _citaMedicaDTO;
+        private readonly citaMedicaDAO _citaMedicaDTO;
         public CitaMedicaAPIController(AplicationDbContext context)
         {
-            _citaMedicaDTO = new citaMedicaDTO(context);
+            _citaMedicaDTO = new citaMedicaDAO(context);
         }
 
 

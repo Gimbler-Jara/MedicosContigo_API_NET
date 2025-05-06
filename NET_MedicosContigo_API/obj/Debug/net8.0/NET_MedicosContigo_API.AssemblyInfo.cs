@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NET_MedicosContigo_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b8f9efcca58ce04dfd8752d0ef9785023848f05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b93bdb5bf7d3b5d6330426e21e5e5ba978ffe67a")]
 [assembly: System.Reflection.AssemblyProductAttribute("NET_MedicosContigo_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NET_MedicosContigo_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

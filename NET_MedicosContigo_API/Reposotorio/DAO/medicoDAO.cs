@@ -7,12 +7,12 @@ using NET_MedicosContigo_API.Reposotorio.Interfaces;
 
 namespace NET_MedicosContigo_API.Reposotorio.DAO
 {
-    public class medicoDTO : IMedico
+    public class medicoDAO : IMedico
     {
 
         private readonly AplicationDbContext _context;
 
-        public medicoDTO(AplicationDbContext context)
+        public medicoDAO(AplicationDbContext context)
         {
             _context = context;
         }
@@ -78,7 +78,7 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                      Rol = new RolDTO
                      {
                          Id = m.Usuario.Rol!.Id,
-                         Rol = m.Usuario.Rol.Nombre
+                         Rol = m.Usuario.Rol.Rol
                      }
                  },
                  Especialidad = new EspecialidadDTO
@@ -157,7 +157,7 @@ namespace NET_MedicosContigo_API.Reposotorio.DAO
                     Rol = new RolDTO
                     {
                         Id = rolMedico.Id,
-                        Rol = rolMedico.Nombre
+                        Rol = rolMedico.Rol
                     }
                 },
                 Especialidad = new EspecialidadDTO

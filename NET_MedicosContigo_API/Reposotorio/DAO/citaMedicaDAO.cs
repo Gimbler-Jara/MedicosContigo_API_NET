@@ -6,11 +6,11 @@ using NET_MedicosContigo_API.Reposotorio.Interfaces;
 
 namespace NET_MedicosContigo_API.Reposotorio.DAO
 {
-    public class citaMedicaDTO : ICitaMedica
+    public class citaMedicaDAO : ICitaMedica
     {
         private readonly AplicationDbContext _context;
 
-        public citaMedicaDTO(AplicationDbContext context)
+        public citaMedicaDAO(AplicationDbContext context)
         {
             _context = context;
         }

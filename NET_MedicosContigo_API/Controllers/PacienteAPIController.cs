@@ -11,11 +11,11 @@ namespace NET_MedicosContigo_API.Controllers
     [ApiController]
     public class PacienteAPIController : ControllerBase
     {
-        private readonly pacienteDTO _pacienteDTO;
+        private readonly pacienteDAO _pacienteDTO;
 
         public PacienteAPIController(AplicationDbContext context)
         {
-            _pacienteDTO = new pacienteDTO(context);
+            _pacienteDTO = new pacienteDAO(context);
         }
 
         // GET: /api/pacientes

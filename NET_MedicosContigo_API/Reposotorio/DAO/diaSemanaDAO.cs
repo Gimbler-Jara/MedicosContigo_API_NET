@@ -4,16 +4,19 @@ using NET_MedicosContigo_API.Reposotorio.Interfaces;
 
 namespace NET_MedicosContigo_API.Reposotorio.DAO
 {
-    public class documentTypeDTO  : IDocumentType
+    public class diaSemanaDAO : IDiaSemana
     {
+
         private readonly AplicationDbContext _context;
-        public documentTypeDTO(AplicationDbContext context)
+        public diaSemanaDAO(AplicationDbContext context)
         {
             _context = context;
         }
-        public IEnumerable<DocumentType> ListarTiposDocumento()
+
+
+        public IEnumerable<DiaSemana> ListarDiasSemana()
         {
-            return _context.DocumentTypes.ToList();
+            return _context.DiasSemana.ToList();
         }
     }
 }

@@ -46,7 +46,7 @@ namespace NET_MedicosContigo_API.Models
 
         // Relaciones
         public DocumentType? DocumentType { get; set; }
-        public Rol? Rol { get; set; }
+        public Roles? Rol { get; set; }
         public Paciente? Paciente { get; set; }
         public Medico? Medico { get; set; }
         public ICollection<Disponibilidad>? Disponibilidades { get; set; }

@@ -13,7 +13,7 @@ namespace NET_MedicosContigo_API.Data
         public DbSet<Medico> Medicos { get; set; }
         public DbSet<Especialidad> Especialidades { get; set; }
         public DbSet<DocumentType> DocumentTypes { get; set; }
-        public DbSet<Rol> Roles { get; set; }
+        public DbSet<Roles> Roles { get; set; }
         public DbSet<Disponibilidad> Disponibilidades { get; set; }
         public DbSet<CitaMedica> Citas { get; set; }
         public DbSet<Hora> Horas { get; set; }
@@ -34,7 +34,7 @@ namespace NET_MedicosContigo_API.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Usuario>().ToTable("tb_usuario");
             modelBuilder.Entity<Paciente>().ToTable("tb_paciente");
-            modelBuilder.Entity<Rol>().ToTable("tb_rol");
+            modelBuilder.Entity<Roles>().ToTable("tb_rol");
             modelBuilder.Entity<DocumentType>().ToTable("tb_document_type");
             modelBuilder.Entity<Medico>().ToTable("tb_medico");
             modelBuilder.Entity<Especialidad>().ToTable("tb_especialidad");

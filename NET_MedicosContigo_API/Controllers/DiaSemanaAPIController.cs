@@ -10,12 +10,12 @@ namespace NET_MedicosContigo_API.Controllers
     public class DiaSemanaAPIController : ControllerBase
     {
 
-        private readonly diaSemanaDTO _diaSemanaDTO;
+        private readonly diaSemanaDAO _diaSemanaDTO;
 
 
         public DiaSemanaAPIController(AplicationDbContext context)
         {
-            _diaSemanaDTO = new diaSemanaDTO(context);
+            _diaSemanaDTO = new diaSemanaDAO(context);
         }
 
 

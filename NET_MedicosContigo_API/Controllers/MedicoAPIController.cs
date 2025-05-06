@@ -11,11 +11,11 @@ namespace NET_MedicosContigo_API.Controllers
     public class MedicoAPIController : ControllerBase
     {
 
-        private readonly medicoDTO _medicoDTO;
+        private readonly medicoDAO _medicoDTO;
 
         public MedicoAPIController(AplicationDbContext context)
         {
-            _medicoDTO = new medicoDTO(context);
+            _medicoDTO = new medicoDAO(context);
         }
 
         [HttpGet]

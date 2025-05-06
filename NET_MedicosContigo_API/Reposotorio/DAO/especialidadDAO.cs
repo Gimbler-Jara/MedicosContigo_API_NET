@@ -4,10 +4,10 @@ using NET_MedicosContigo_API.Reposotorio.Interfaces;
 
 namespace NET_MedicosContigo_API.Reposotorio.DAO
 {
-    public class especialidadDTO : IEspecialidad
+    public class especialidadDAO : IEspecialidad
     {
         private readonly AplicationDbContext _context;
-        public especialidadDTO(AplicationDbContext context)
+        public especialidadDAO(AplicationDbContext context)
         {
             _context = context;
         }

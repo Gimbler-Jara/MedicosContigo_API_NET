@@ -10,11 +10,11 @@ namespace NET_MedicosContigo_API.Controllers
     public class EspecialidadAPIController : ControllerBase
     {
 
-        private readonly especialidadDTO _especialidadDTO;
+        private readonly especialidadDAO _especialidadDTO;
 
         public EspecialidadAPIController(AplicationDbContext context)
         {
-            _especialidadDTO = new especialidadDTO(context);
+            _especialidadDTO = new especialidadDAO(context);
         }
 
         [HttpGet]

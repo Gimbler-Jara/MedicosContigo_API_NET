@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj": {}
+    "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\Backend Medicos Contigo\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj": {
+    "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\Backend Medicos Contigo\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj",
+        "projectUniqueName": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\Backend Medicos Contigo\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj",
         "projectName": "NET_MedicosContigo_API",
-        "projectPath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj",
+        "projectPath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\Backend Medicos Contigo\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj",
         "packagesPath": "C:\\Users\\jarag\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\obj\\",
+        "outputPath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\Backend Medicos Contigo\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

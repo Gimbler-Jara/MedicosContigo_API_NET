@@ -8,11 +8,11 @@ namespace NET_MedicosContigo_API.Controllers
     [ApiController]
     public class DocumentTypeAPIController : ControllerBase
     {
-        private readonly documentTypeDTO _documentTypeDTO;
+        private readonly documentTypeDAO _documentTypeDTO;
 
         public DocumentTypeAPIController(AplicationDbContext context)
         {
-            _documentTypeDTO = new documentTypeDTO(context);
+            _documentTypeDTO = new documentTypeDAO(context);
         }
 
         [HttpGet]

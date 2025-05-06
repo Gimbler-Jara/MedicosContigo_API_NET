@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PO9uWlkfDdc=",
+  "dgSpecHash": "zcKUMvNzlrM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\API\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj",
+  "projectFilePath": "C:\\Users\\jarag\\Desktop\\Cibertec_laboratorio\\Ciclo5\\DESARROLLO DE SERVICIOS WEB I\\Proyecto\\Backend Medicos Contigo\\NET_MedicosContigo_API\\NET_MedicosContigo_API\\NET_MedicosContigo_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jarag\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jarag\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
